@@ -3,10 +3,9 @@ public class Ladder {
 
 
     public Ladder(BoardSquare top, BoardSquare foot){
-
+        setTop(top);
+        foot.addLadder(this);
     }
-
-
 
 
     public BoardSquare getTop() {
